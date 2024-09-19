@@ -38,11 +38,24 @@
       .logo {
         text-align: center;
         margin-bottom: 20px;
-        width: 150;
-        height: 150;
+        width: 150px;
+        height: 150px;
       }
       .logo img {
         max-width: 200px;
+      }
+      .nav {
+        margin-bottom: 20px;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+      }
+      .nav a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: #3498db;
+      }
+      .nav a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -56,7 +69,22 @@
       <h1>Privacy Policy</h1>
       <p>Last updated: 19-09-2024</p>
 
-      <h2>Introduction</h2>
+      <!-- Navigation Section -->
+      <div class="nav">
+        <a href="#introduction">Introduction</a>
+        <a href="#information-we-do-not-collect"
+          >Information We Do Not Collect</a
+        >
+        <a href="#login-and-authentication">Login and Authentication</a>
+        <a href="#advertisements">Advertisements</a>
+        <a href="#account-deletion">Account Deletion</a>
+        <a href="#language-support">Language Support</a>
+        <a href="#third-party-links">Third-Party Links</a>
+        <a href="#changes-to-this-policy">Changes to This Privacy Policy</a>
+        <a href="#contact-us">Contact Us</a>
+      </div>
+
+      <h2 id="introduction">Introduction</h2>
       <p>
         Welcome to Memepocalypse! We value your privacy and are dedicated to
         providing a transparent experience. This privacy policy explains how we
@@ -64,16 +92,16 @@
         agree to the terms of this policy.
       </p>
 
-      <h2>Information We Do Not Collect</h2>
+      <h2 id="information-we-do-not-collect">Information We Do Not Collect</h2>
       <p>
-        Memepocalypse does not collect or store any personal data (Except
-        email-address if the user chooses to log with it). All memes, and app
+        Memepocalypse does not collect or store any personal data (except email
+        address if the user chooses to log in with it). All memes, and app
         settings are stored locally on your device and are not transmitted to
         external servers. We respect your privacy and ensure that no data leaves
         your device.
       </p>
 
-      <h2>Login and Authentication</h2>
+      <h2 id="login-and-authentication">Login and Authentication</h2>
       <p>
         Memepocalypse offers users the option to log in or sign up using their
         email address or through anonymous login. When users choose to log in
@@ -83,7 +111,7 @@
         cases, no data is shared with external servers or third parties.
       </p>
 
-      <h2>Advertisements</h2>
+      <h2 id="advertisements">Advertisements</h2>
       <p>
         Our app includes banner ads and rewarded ads. These ads are served by
         third-party providers, which may collect non-personally identifiable
@@ -91,13 +119,23 @@
         with ad providers.
       </p>
 
-      <h2>Language Support</h2>
+      <h2 id="account-deletion">Account Deletion</h2>
+      <p>
+        Users have the option to delete their accounts at any time. To do so,
+        navigate to Settings within the app and select Delete Account. Upon
+        selecting this option, your account and all associated data will be
+        permanently removed from our system. Please note that this action is
+        irreversible, and you will lose access to any data or content associated
+        with your account.
+      </p>
+
+      <h2 id="language-support">Language Support</h2>
       <p>
         Memepocalypse is available in three languages: French, Arabic, and
         English. You can easily switch between languages within the app.
       </p>
 
-      <h2>Third-Party Links</h2>
+      <h2 id="third-party-links">Third-Party Links</h2>
       <p>
         Our app may contain links to third-party services. Memepocalypse is not
         responsible for the privacy policies or content of these external sites.
@@ -105,7 +143,7 @@
         websites they visit.
       </p>
 
-      <h2>Changes to This Privacy Policy</h2>
+      <h2 id="changes-to-this-policy">Changes to This Privacy Policy</h2>
       <p>
         We may update this privacy policy from time to time. Any changes will be
         posted on this page, and users are encouraged to check this page
@@ -113,7 +151,7 @@
         updates or notifications.
       </p>
 
-      <h2>Contact Us</h2>
+      <h2 id="contact-us">Contact Us</h2>
       <p>
         If you have any questions about this privacy policy, feel free to reach
         out to us at zimproduction23@gmail.com or
