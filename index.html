@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memepocalypse - Create Epic Memes!</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(145deg, #ff4757, #ffffff);
+        background-size: cover;
+        height: 100vh;
+        color: #333;
+        overflow-x: hidden;
+        position: relative;
+      }
+      .navbar {
+        background-color: rgba(255, 71, 87, 0.8);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+      .navbar .logo {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      .navbar a:hover {
+        color: #ffc0cb;
+      }
+      .hero {
+        height: 60vh; /* Adjusting height for the image section */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 100px;
+        padding: 0 20px;
+      }
+      .hero h1 {
+        font-size: 48px; /* Responsive font size */
+        font-weight: bold;
+        color: white;
+        text-shadow: 3px 3px #000;
+        line-height: 1.2;
+      }
+      .hero p {
+        font-size: 20px; /* Responsive font size */
+        color: #f1f1f1;
+        margin-top: 20px;
+        max-width: 600px;
+      }
+      .cta-button {
+        margin-top: 30px;
+        background-color: #ff6b81;
+        color: white;
+        padding: 15px 30px;
+        font-size: 18px; /* Responsive font size */
+        font-weight: bold;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+      }
+      .cta-button:hover {
+        background-color: #e74c3c;
+        transform: translateY(-3px);
+      }
+
+      /* Large Image Placeholder */
+      .image-placeholder {
+        width: 100%;
+        height: 100%; /* Full height of the hero section */
+        background: url("Feature_Graphics.png") no-repeat center center;
+        background-size: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Footer */
+      footer {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        z-index: 10;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 32px;
+        }
+        .hero p {
+          font-size: 16px;
+        }
+        .cta-button {
+          font-size: 16px;
+          padding: 10px 20px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .navbar {
+          font-size: 24px;
+        }
+        .navbar a {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo" style="max-width: 100px">
+        <img
+          style="max-width: 70px"
+          src="./adaptive-icon.png"
+          alt="Memepocalypse Logo"
+        />
+      </div>
+      <div>
+        <a href="policy.html">Privacy Policy</a>
+        <a href="https://bit.ly/48Rxube" target="_blank">Portfolio</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="image-placeholder"></div>
+      <!-- Placeholder for large image -->
+      <h1>Create Memes Like Never Before with Memepocalypse!</h1>
+      <p>
+        The ultimate meme creator app designed for meme enthusiasts. Easily
+        create, share, and laugh with the world. Available on all platforms!
+      </p>
+      <button class="cta-button">Download the App Now</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>© 2024 Memepocalypse. All rights reserved.</footer>
+  </body>
+</html>
